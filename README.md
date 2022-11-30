@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ruby 2.7.2
+rails 6.1.7
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Данный проект реализован в качестве тестового задания. Разработка велась по принципу TDD с помощью rspec.
+Написанно несколько тестов (выборочно) чтобы показать что rspec мне знаком. Не использовалось никакой стилизации для 
+экономии времени. В данном проекте реализована аутентификация с помощью гема Device. Пользователь регистрируется,
+после этого может создавать посты, смотреть все посты, удалять только свои посты. Если пользователь пытается
+создать пост с ошибкой(пустой заголовок например) то ему выдается сообщение об ошибке.
