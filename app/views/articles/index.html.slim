@@ -1,0 +1,6 @@
+= render @articles
+
+-if user_signed_in?
+  p = link_to 'Create new article', new_article_path
+
+p = link_to 'Start page', root_path

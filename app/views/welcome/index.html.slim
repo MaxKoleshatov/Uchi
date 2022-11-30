@@ -1,0 +1,9 @@
+h1 "Welcome to Uchi.ru"
+
+- if user_signed_in?
+  h2 "Hello - #{current_user.name}"
+
+p = link_to 'Articles', articles_path
+p = link_to 'Log in', new_user_session_path
+p = link_to 'Sign out', destroy_user_session_path, method: :delete
+p = link_to 'Sigh up', new_user_registration_path

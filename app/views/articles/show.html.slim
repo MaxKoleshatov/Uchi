@@ -1,0 +1,7 @@
+p= @article.title
+p= @article.body
+
+- if user_signed_in?
+  p = link_to 'Delete article', article_path(@article), method: :delete
+
+p = link_to 'Articles', articles_path
